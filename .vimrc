@@ -48,10 +48,6 @@ set t_Co=256
 set nu
 "主题
 colorscheme solarized 
-"colorscheme evening 
-"colorscheme desert 
-"colorscheme peaksea 
-"colorscheme molokai 
 "背景
 set background=light
 "set background=dark
