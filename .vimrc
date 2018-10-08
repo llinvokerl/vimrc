@@ -120,8 +120,6 @@ nnoremap <leader><leader>fu :LeaderfFunctionAll<CR>
 set incsearch
 " 搜索时大小写不敏感
 set ignorecase
-" 关闭兼容模式
-set nocompatible
 " vim 自身命令行模式智能补全
 set wildmenu
 

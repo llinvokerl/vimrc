@@ -1,5 +1,7 @@
 "plugin 配置 begin
 
+" 关闭兼容模式，这句必须得加在前面，否则无法通过.vimrc.bundles执行+PluginInstall +qall
+set nocompatible
 " vundle 环境设置
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
