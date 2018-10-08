@@ -1,0 +1,39 @@
+"plugin 配置 begin
+
+" vundle 环境设置
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+" vundle 管理的插件列表必须位于 vundle#begin() 和 vundle#end() 之间
+call vundle#begin()
+"所有插件
+Plugin 'VundleVim/Vundle.vim'
+"php自动补齐插件
+Plugin 'shawncplus/phpcomplete.vim'
+"配色主题
+Plugin 'flazz/vim-colorschemes'
+"顶部和底部的状态栏及主题
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+"括号自动补齐
+Plugin 'Raimondi/delimitMate'
+let delimitMate_matchpairs = "(:),[:],{:}" "小于号<就别补齐了
+"NERDTree目录树
+Plugin 'scrooloose/nerdtree'
+"nerdcommenter批量注释
+Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1 "注释后加一个空格
+"gutentags ctags增量自动索引
+Plugin 'ludovicchabant/vim-gutentags'
+"vim中文文档
+Plugin 'yianwillis/vimcdoc'
+"ALE 语法检查
+Plugin 'w0rp/ale'
+"文件模糊匹配<leader>+f搜索文件，:LeaderfFunctionAll 列出当前目录所有函数
+Plugin 'Yggdroot/LeaderF'
+"svn git 版本控制的diff( ]+c、[+c 跳转下、上一个diff）
+Plugin 'mhinz/vim-signify'
+"Plugin 'wakatime/vim-wakatime'
+call vundle#end()
+filetype plugin indent on
+
+"plugin 配置 end 
