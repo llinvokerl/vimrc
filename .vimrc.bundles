@@ -34,6 +34,8 @@ Plugin 'w0rp/ale'
 Plugin 'Yggdroot/LeaderF'
 "svn git 版本控制的diff( ]+c、[+c 跳转下、上一个diff）
 Plugin 'mhinz/vim-signify'
+"xdebug
+"Plugin 'vim-vdebug/vdebug'
 "Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 filetype plugin indent on
