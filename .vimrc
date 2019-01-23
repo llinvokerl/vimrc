@@ -45,7 +45,7 @@ set shiftwidth=4
 " 智能缩进
 set smartindent
 " {映射成后面的命令
-imap { {}<ESC>i<CR><ESC>O
+imap { {<CR>}<LEFT><CR><UP><tab>
 " 不备份
 set nobackup
 " 改变每行第81个字符底色
@@ -120,12 +120,12 @@ nnoremap <leader><leader>l :LeaderfLine<CR>
 nnoremap <leader><leader>fu :LeaderfFunctionAll<CR>
 
 " vdebug配置
-if !exists('g:vdebug_options')
-    let g:vdebug_options = {}
-endif
-let g:vdebug_options['debug_file'] = '/home/log/vdebug.log'
-let g:vdebug_options['debug_file_level'] = 2
-let g:vdebug_options['port'] = 9001
+" if !exists('g:vdebug_options')
+    " let g:vdebug_options = {}
+" endif
+" let g:vdebug_options['debug_file'] = '/home/log/vdebug.log'
+" let g:vdebug_options['debug_file_level'] = 2
+" let g:vdebug_options['port'] = 9001
 
 " 以下4个是必须的
 " 开启实时搜索功能

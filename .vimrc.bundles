@@ -18,7 +18,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 "括号自动补齐
 Plugin 'Raimondi/delimitMate'
-let delimitMate_matchpairs = "(:),[:],{:}" "小于号<就别补齐了
+let delimitMate_matchpairs = "(:),[:]" "小于号<就别补齐了
 "NERDTree目录树
 Plugin 'scrooloose/nerdtree'
 "nerdcommenter批量注释
