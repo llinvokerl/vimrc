@@ -47,6 +47,9 @@ set smartindent
 imap { {}<ESC>i<CR><ESC>O
 " 不备份
 set nobackup
+" 改变每行第81个字符底色
+set textwidth=80
+set colorcolumn=+1,+41
 " 
 set smarttab
 " 基于缩进进行代码折叠(zc折叠，zo打开折叠)
