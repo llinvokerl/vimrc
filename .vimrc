@@ -39,6 +39,7 @@ filetype indent on
 set expandtab
 " 设置编辑时制表符占用空格数
 set tabstop=4
+set syntax=php
 " 设置格式化时制表符占用空格数
 set shiftwidth=4
 " 智能缩进
@@ -114,9 +115,17 @@ nmap sp <Plug>(ale_previous_wrap)
 nmap sn <Plug>(ale_next_wrap)
 
 " Leaderf 配置
-nnoremap <leader><leader>fi :LeaderfFile<CR>
+nnoremap <leader><leader>fi :LeaderfFile /home/wwwroot/<CR>
 nnoremap <leader><leader>l :LeaderfLine<CR>
 nnoremap <leader><leader>fu :LeaderfFunctionAll<CR>
+
+" vdebug配置
+if !exists('g:vdebug_options')
+    let g:vdebug_options = {}
+endif
+let g:vdebug_options['debug_file'] = '/home/log/vdebug.log'
+let g:vdebug_options['debug_file_level'] = 2
+let g:vdebug_options['port'] = 9001
 
 " 以下4个是必须的
 " 开启实时搜索功能
