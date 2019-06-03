@@ -6,7 +6,7 @@
 ## 安装
 #### 准备工作
 ```
-  sudo apt-get update && sudo apt-get install git ctags -y
+  sudo apt-get update && sudo apt-get install git ctags ack-grep -y
 ```
 #### clone
 ```
