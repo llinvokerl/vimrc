@@ -37,6 +37,8 @@ Plugin 'mhinz/vim-signify'
 "xdebug
 "Plugin 'vim-vdebug/vdebug'
 "Plugin 'wakatime/vim-wakatime'
+"搜索文本插件
+Plugin 'mileszs/ack.vim'
 call vundle#end()
 filetype plugin indent on
 
