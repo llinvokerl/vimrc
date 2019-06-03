@@ -118,6 +118,15 @@ nnoremap <leader><leader>fi :LeaderfFile<CR>
 nnoremap <leader><leader>l :LeaderfLine<CR>
 nnoremap <leader><leader>fu :LeaderfFunctionAll<CR>
 
+"Ack 配置
+let g:ackhighlight = 1
+    "默认不跳到第一个匹配结果里
+cnoreabbrev Ack Ack!
+cnoreabbrev AckFile AckFile!
+    "映射
+nnoremap <Leader>aw :Ack!<Space>
+nnoremap <Leader>af :AckFile!<Space>
+
 " 以下4个是必须的
 " 开启实时搜索功能
 set incsearch
