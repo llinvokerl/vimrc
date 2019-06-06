@@ -34,6 +34,8 @@ Plugin 'w0rp/ale'
 Plugin 'Yggdroot/LeaderF'
 "svn git 版本控制的diff( ]+c、[+c 跳转下、上一个diff）
 Plugin 'mhinz/vim-signify'
+"git 一些操作在vim直接执行，可用于airline显示git分支
+Plugin 'tpope/vim-fugitive'
 "xdebug
 "Plugin 'vim-vdebug/vdebug'
 "Plugin 'wakatime/vim-wakatime'
