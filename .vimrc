@@ -32,7 +32,9 @@ set hlsearch
 "顶部状态栏打开
 let g:airline#extensions#tabline#enabled = 1
 "状态栏主题
-let g:airline_theme='jellybeans'
+let g:airline_theme='luna'
+"底部的箭头需要powerline的字体
+let g:airline_powerline_fonts = 1
 " 自适应不同语言的智能缩进
 filetype indent on
 " 将制表符扩展为空格
