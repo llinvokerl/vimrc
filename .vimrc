@@ -116,9 +116,12 @@ nmap sp <Plug>(ale_previous_wrap)
 nmap sn <Plug>(ale_next_wrap)
 
 " Leaderf 配置
-nnoremap <leader><leader>fi :LeaderfFile<Space> "模糊查找目录下的文件
-nnoremap <leader><leader>l :LeaderfLine<CR> "模糊匹配当前文件的行
-nnoremap <leader><leader>fu :LeaderfFunctionAll<CR> " 模糊匹配当前文件的函数，可用于列出所有函数
+" 模糊查找目录下的文件
+nnoremap <leader><leader>fi :LeaderfFile<Space> 
+" 模糊匹配当前文件的行
+nnoremap <leader><leader>l :LeaderfLine<CR> 
+" 模糊匹配当前文件的函数，可用于列出所有函数
+nnoremap <leader><leader>fu :LeaderfFunctionAll<CR> 
 
 "Ack 配置
 let g:ackhighlight = 1
