@@ -139,7 +139,8 @@ set incsearch
 set ignorecase
 " vim 自身命令行模式智能补全
 set wildmenu
-
+" 解决vim最多只能复制50行的问题
+set viminfo='1000,<500
 
 "基础配置 end 
 
