@@ -41,6 +41,9 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'wakatime/vim-wakatime'
 "搜索文本插件
 Plugin 'mileszs/ack.vim'
+"执行命令行
+Plugin 'skywind3000/asyncrun.vim'
+let g:asyncrun_open = 10 "quickfix窗口大小
 call vundle#end()
 filetype plugin indent on
 
