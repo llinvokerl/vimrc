@@ -125,12 +125,17 @@ nnoremap <leader><leader>fu :LeaderfFunctionAll<CR>
 
 "Ack 配置
 let g:ackhighlight = 1
-    "默认不跳到第一个匹配结果里
+"默认不跳到第一个匹配结果里
 cnoreabbrev Ack Ack!
 cnoreabbrev AckFile AckFile!
-    "映射
+"映射
 nnoremap <Leader>aw :Ack!<Space>
 nnoremap <Leader>af :AckFile!<Space>
+
+"AsyncRun 配置
+let g:asyncrun_open = 10 "quickfix窗口大小
+nnoremap <Leader>r :AsyncRun<Space>
+nnoremap <Leader>s :AsyncStop<CR>
 
 " 以下4个是必须的
 " 开启实时搜索功能
