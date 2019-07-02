@@ -43,6 +43,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 "执行命令行
 Plugin 'skywind3000/asyncrun.vim'
+"This plugin shows how many times a search pattern occurs in the current buffer
+Plugin 'google/vim-searchindex'
 call vundle#end()
 filetype plugin indent on
 
