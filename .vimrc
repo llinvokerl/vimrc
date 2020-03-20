@@ -111,6 +111,9 @@ let g:airline#extensions#ale#enabled = 1
 " 错误图标
 let g:ale_sign_error = '😂'
 let g:ale_sign_warning = '😅'
+let g:ale_linters = {
+    \'go': ['golint', 'go vet', 'go build'],
+\}
 " 普通模式下，sp前往上一个错误或警告，sn前往下一个错误或警告
 nmap sp <Plug>(ale_previous_wrap)
 nmap sn <Plug>(ale_next_wrap)
@@ -146,6 +149,8 @@ set ignorecase
 set wildmenu
 " 解决vim最多只能复制50行的问题
 set viminfo='1000,<500
+"vim内置插件 matchit 稍微智能一点的括号匹配
+runtime macros/matchit.vim
 
 "基础配置 end 
 

@@ -38,6 +38,8 @@ Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-fugitive'
 "xdebug
 "Plugin 'vim-vdebug/vdebug'
+"let g:vdebug_options = {}
+"let g:vdebug_options["port"] = 9001
 "Plugin 'wakatime/vim-wakatime'
 "搜索文本插件
 Plugin 'mileszs/ack.vim'
@@ -45,6 +47,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'skywind3000/asyncrun.vim'
 "This plugin shows how many times a search pattern occurs in the current buffer
 Plugin 'google/vim-searchindex'
+"go
+Plugin 'fatih/vim-go'
+"禁用保存时自动格式化代码
+let g:go_fmt_autosave = 0
 call vundle#end()
 filetype plugin indent on
 
