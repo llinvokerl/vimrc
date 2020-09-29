@@ -46,7 +46,7 @@ set shiftwidth=4
 " 智能缩进
 set smartindent
 " {映射成后面的命令
-imap { {}<ESC>i<CR><ESC>O
+"imap { {}<ESC>i<CR><ESC>O
 " 不备份
 set nobackup
 " 改变每行第81个字符底色
@@ -120,11 +120,14 @@ nmap sn <Plug>(ale_next_wrap)
 
 " Leaderf 配置
 " 模糊查找目录下的文件
-nnoremap <leader><leader>fi :LeaderfFile<Space> 
+nnoremap <leader><leader>fi :LeaderfFile<CR> 
 " 模糊匹配当前文件的行
 nnoremap <leader><leader>l :LeaderfLine<CR> 
 " 模糊匹配当前文件的函数，可用于列出所有函数
 nnoremap <leader><leader>fu :LeaderfFunctionAll<CR> 
+" 默认往上层目录找到最近一个带有RootMarkers文件的祖先作为查找目录
+let g:Lf_RootMarkers = ['.git', '.svn']
+let g:Lf_WorkingDirectoryMode = 'Ac' "A 当前文件所在的祖先 a 当前workspace所在的祖先
 
 "Ack 配置
 let g:ackhighlight = 1
@@ -152,5 +155,6 @@ set viminfo='1000,<500
 "vim内置插件 matchit 稍微智能一点的括号匹配
 runtime macros/matchit.vim
 
+let g:go_version_warning = 0
 "基础配置 end 
 
