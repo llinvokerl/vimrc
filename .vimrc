@@ -108,9 +108,9 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_enter = 0
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
-" 错误图标
-let g:ale_sign_error = '😂'
-let g:ale_sign_warning = '😅'
+" 错误图标 emoji有bug 会导致显示窜字符
+" let g:ale_sign_error = "😂"
+" let g:ale_sign_warning = '😅'
 let g:ale_linters = {
     \'go': ['golint', 'go vet', 'go build'],
 \}
