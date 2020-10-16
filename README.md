@@ -2,11 +2,11 @@
 方便我同步多台虚拟机的vimrc配置
 ## 要求:
  - 操作系统: Debian/Ubuntu
- - vim: >=8.0 with Python 2 or Python 3 support. ([编译安装vim](https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source)不复杂，一劳永逸)
+ - vim版本: >=8.0 with Python 2 or Python 3 support. ([编译安装vim](https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source)不复杂，一劳永逸)
 ## 安装
 #### 准备工作
 ```
-  sudo apt-get update && sudo apt-get install git ctags ack-grep -y
+  sudo apt-get update && sudo apt-get install git ctags silversearcher-ag -y
 ```
 #### clone
 ```

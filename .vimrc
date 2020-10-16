@@ -137,6 +137,7 @@ cnoreabbrev AckFile AckFile!
 "映射
 nnoremap <Leader>aw :Ack!<Space>
 nnoremap <Leader>af :AckFile!<Space>
+let g:ackprg = 'ag --vimgrep' "ack大文件太慢了，用ag替换
 
 "AsyncRun 配置
 let g:asyncrun_open = 10 "quickfix窗口大小
