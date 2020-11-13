@@ -49,6 +49,8 @@ Plugin 'skywind3000/asyncrun.vim'
 Plugin 'google/vim-searchindex'
 "go
 Plugin 'fatih/vim-go'
+"切换git工作目录
+Plugin 'airblade/vim-rooter'
 "禁用保存时自动格式化代码
 let g:go_fmt_autosave = 0
 call vundle#end()

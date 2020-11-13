@@ -157,5 +157,7 @@ set viminfo='1000,<500
 runtime macros/matchit.vim
 
 let g:go_version_warning = 0
+" 去掉打开vim时rooter那行提示
+let g:rooter_silent_chdir = 1
 "基础配置 end 
 
