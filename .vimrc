@@ -121,6 +121,7 @@ nmap sn <Plug>(ale_next_wrap)
 " Leaderf 配置
 " 模糊查找目录下的文件
 nnoremap <leader><leader>fi :LeaderfFile<CR> 
+nnoremap <leader><leader>fm :LeaderfMru<CR> 
 " 模糊匹配当前文件的行
 nnoremap <leader><leader>l :LeaderfLine<CR> 
 " 模糊匹配当前文件的函数，可用于列出所有函数
@@ -159,5 +160,10 @@ runtime macros/matchit.vim
 let g:go_version_warning = 0
 " 去掉打开vim时rooter那行提示
 let g:rooter_silent_chdir = 1
+"缓冲区打开文件会跳转到指定目录下
+"set autochdir
+"默认不挂起而是新起一个shell进程
+nmap <C-Z> :shell<CR>
+"空格映射到冒号上
+nnoremap <Space> :
 "基础配置 end 
-
