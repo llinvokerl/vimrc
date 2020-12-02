@@ -120,12 +120,12 @@ nmap sn <Plug>(ale_next_wrap)
 
 " Leaderf 配置
 " 模糊查找目录下的文件
-nnoremap <leader><leader>fi :LeaderfFile<CR> 
-nnoremap <leader><leader>fm :LeaderfMru<CR> 
+nnoremap <leader>fi :LeaderfFile<CR>
+nnoremap <leader>fm :LeaderfMru<CR>
 " 模糊匹配当前文件的行
-nnoremap <leader><leader>l :LeaderfLine<CR> 
+nnoremap <leader>l :LeaderfLine<CR> 
 " 模糊匹配当前文件的函数，可用于列出所有函数
-nnoremap <leader><leader>fu :LeaderfFunctionAll<CR> 
+nnoremap <leader>fu :LeaderfFunctionAll<CR> 
 " 默认往上层目录找到最近一个带有RootMarkers文件的祖先作为查找目录
 let g:Lf_RootMarkers = ['.git', '.svn']
 let g:Lf_WorkingDirectoryMode = 'Ac' "A 当前文件所在的祖先 a 当前workspace所在的祖先
