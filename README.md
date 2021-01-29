@@ -16,6 +16,11 @@
 ```
   cd vimrc/ && sh install.sh
 ```
+#### 在本地安装字体以适应vim-airline状态栏的符号
+```
+  git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && cd ../ && rm -fr fonts
+```
+iTerm2->preference->profiles->text->font 选择for Powerline结尾的字体即可
 ## 卸载
 ```
   cd ~/ && rm -rf .vim .vimrc .vimrc.bundles
